@@ -38,27 +38,3 @@ int main()
     return 0;
 }
 
-//공용체union 와 열거체 enum class)
-
-int main()
-{
-    //열거체 기호 상수를 만드는 것에 대한 또다른 방법
-    enum spectrum {red, orange, yellow, green, blue, indigo, violet};
-    /* 
-    1. spectrum은 열거체의 이름입니다.
-    2. red, orange, yellow, green, blue, indigo, violet은 열거체의 기호 상수입니다.'0,에서부터 7까지 각각 대응하게됨
-     0,1,2,3,4,5,6 이렇게됨
-    
-    */
-   spectrum color = red;
-   cout << "color is " << color << endl;
-   
-   return 0;
-
-   enum spectrum {red=1, orange=3, yellow, green, blue, indigo, violet};
-  // 이것과 동일함 > enum spectrum {red=1, orange=3, yellow=4, green=5, blue=6, indigo=7, violet=8}; 초기화 하지 않은 열거자들은 그이전 값보다 1씩 증가해서 자동으로 지정됨
-
-  
-
-}
-
